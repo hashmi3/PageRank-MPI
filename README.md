@@ -5,8 +5,8 @@ This repo consists of distributed programs built using cumulative message passin
 ## Page Rank using OpenMPI
 Implemented [Page rank](https://en.wikipedia.org/wiki/PageRank) algorithm over a compute cluster in a distributed manner. The work is distributed among `P` processes. For simplicity, every process will read the entire input graph and create its own graph data structure. Used **edge decomposition** strategy to distribute the work among the processes.
 
-Undirected graph to imitate page redirection links is generated using [PaRMAT](https://github.com/farkhor/PaRMAT).
-
+Generated directed graph to imitate page redirection links is generated using [PaRMAT](https://github.com/farkhor/PaRMAT).
+Generated un-directed graph to [count number of triangles](https://cs.stanford.edu/~rishig/courses/ref/l1.pdf) within graph.
 
 The PageRank pseudocode is:
   
